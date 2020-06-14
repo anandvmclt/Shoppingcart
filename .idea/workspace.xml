@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f43aea8-3cf8-40b5-b3d4-8e760949a901" name="Default Changelist" comment="" />
+    <list default="true" id="8f43aea8-3cf8-40b5-b3d4-8e760949a901" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/blog/templates/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mac/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/static/blog/myblog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/templates/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/mac/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/mac/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/mac/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/mac/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/mac/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Apple_lo1Xtv3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Cucumber.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Cucumber_NAFxHfI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Grapes_black.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Grapes_black_JcthM7K.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Ladiefinger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Ladiefinger_ZGq1Ku6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Mango_yellow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/Mango_yellow_Px9QpyZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/banana.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/banana_h0D6gRn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/tomato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/media/shop/images/tomato_mUY26w2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/mac/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/migrations/0002_auto_20200614_0118.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Cucumber.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Grapes_black.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Grapes_green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Ladiefinger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Mango_green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/Mango_yellow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/banana.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/static/shop/tomato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/templates/shop/Basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/templates/shop/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/templates/shop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/shop/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/mac/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/mac/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +88,9 @@
   <component name="ProjectId" id="1dDBHoUrZg4rPuy3t9nnRmMeMrB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -40,6 +108,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ecart" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mac" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mac/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
