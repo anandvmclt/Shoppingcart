@@ -4,7 +4,10 @@
     <list default="true" id="8f43aea8-3cf8-40b5-b3d4-8e760949a901" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mac/db.sqlite3" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" afterDir="false" />
+=======
+>>>>>>> e069fd9f8c01cb0a0de888e0177a59ccba18cc5a
       <change beforePath="$PROJECT_DIR$/mac/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
