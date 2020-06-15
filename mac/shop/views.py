@@ -6,7 +6,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-<<<<<<< HEAD
     # products = Product.objects.all()
     # print(products)
     #  n = len(products)
@@ -25,13 +24,6 @@ def index(request):
     #allProds = [[products, range(1, nSlides), nSlides],
     #            [products, range(1, nSlides), nSlides]]
     params = {'allProds':allProds}
-=======
-    products = Product.objects.all()
-    print(products)
-    n = len(products)
-    nSlides = n//4 + ceil((n/4)-(n//4))
-    params = {'no_of_slides':nSlides, 'range': range(1,nSlides),'product': products}
->>>>>>> e069fd9f8c01cb0a0de888e0177a59ccba18cc5a
     return render(request, 'shop/index.html', params)
 
 
