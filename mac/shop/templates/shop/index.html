@@ -119,6 +119,7 @@
          localStorage.setItem('cart',JSON.stringify(cart))
          document.getElementById('cart').innerHTML = Object.keys(cart).length;
         });
-
+        $('#popcart').popover();
+        document.getElementById("popcart").setAttribute('data-content','<h6>Cart for Your items in VCart<h6>');
     </script>
    {% endblock %}

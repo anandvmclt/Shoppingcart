@@ -32,24 +32,24 @@ def about(request):
 
 
 def contact(request):
-    return HttpResponse("Shop - Contact page")
+    return render(request, 'shop/contact.html')
 
 
 def tracker(request):
-    return HttpResponse("Shop - Tracker page")
+    return render(request, 'shop/tracker.html')
 
 
 def search(request):
-    return HttpResponse("Shop - Search page")
+    return render(request, 'shop/search.html')
 
 
 def prodview(request):
-    return HttpResponse("Shop - Product page")
+    return render(request, 'shop/product.html')
 
 
 def checkout(request):
-    return HttpResponse("Shop - Checkout page")
+    return render(request, 'shop/checout.html')
 
 
 def cart(request):
-    return HttpResponse("Shop - Cart page")
+    return render(request, 'shop/checkout.html')
