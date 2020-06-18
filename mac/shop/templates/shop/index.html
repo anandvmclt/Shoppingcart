@@ -97,11 +97,10 @@ if (localStorage.getItem('cart') == null) {
     var idstr = this.id.toString();
     if (cart[idstr] != undefined) {
         qty = cart[idstr][0] + 1;
-        name = "My Item";
         cart[idstr] = [qty, name];
     } else {
         qty =1;
-        name = "My Item";
+        name =  document.getElementById('name'+idstr).innerHTML;
         cart[idstr] = [qty, name];
     }
     updateCart(cart);
