@@ -59,7 +59,7 @@ def products(request, myid):
 
 
 def checkout(request):
-    return render(request, 'shop/checout.html')
+    return render(request, 'shop/checkout.html')
 
 
 def cart(request):
