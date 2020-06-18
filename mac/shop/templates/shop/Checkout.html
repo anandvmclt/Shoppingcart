@@ -5,27 +5,15 @@
 <div class="container">
     <div class="col my-4">
         <h2>Step:1 - iVass Cart Express checkout - Review your Cart Items</h2>
-        <div id="items">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                Cras justo odio
-                <span class="badge badge-primary badge-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                Dapibus ac facilisis in
-                <span class="badge badge-primary badge-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                Morbi leo risus
-                <span class="badge badge-primary badge-pill">1</span>
-                </li>
+        <div class="mt-4">
+            <ul class="list-group" id="items">
             </ul>
         </div>
     </div>
     <div class="col my-4">
         <h2>Step:2 - Enter Billing & Shipping Details</h2>
         <form>
-            <div class="form-row">
+            <div class="mt-4 form-row">
              
               <div class="form-group col-md-4">
                 <label for="inputname">Name:</label>
@@ -81,4 +69,36 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block js %}
+<script>
+
+  if (localStorage.getItem('cart') == null) {
+    var cart = {};
+} else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+}
+console.log(cart)
+var sum = 0;
+if ($.isEmptyObject(cart)){
+  //Empty cart
+  mystr = '<h4>Your Cart is Empty. Please Add some items from Shop Before Checkout.</h4>'
+        $('#items').append(mystr);
+
+}
+else{ 
+  for (item in cart) {
+        let name = cart[item][1];
+        let qty = cart[item][0];
+        sum = sum + qty;
+        mystr = `<li class="list-group-item d-flex justify-content-between align-items-center">
+                  ${name}
+                  <span class="badge badge-primary badge-pill">${qty}</span>
+                  </li>`
+        $('#items').append(mystr);
+  }
+ } 
+ document.getElementById('cart').innerHTML = sum;
+</script>
 {% endblock %}
