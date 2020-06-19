@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Product, Contact
+from .models import Product, Contact, Orders
 from math import ceil
 from django.http import HttpResponse
 from datetime import datetime
@@ -59,6 +59,20 @@ def products(request, myid):
 
 
 def checkout(request):
+    if request.method == "POST":
+        items_json = request.POST.get('itemsjson')
+        name = request.POST.get('iname')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        address = request.POST.get('address1', '')+ " " + request.POST.get('address1', '')
+        city = request.POST.get('city')
+        state = request.POST.get('state')
+        zip_code = request.POST.get('zip_code')
+        order = Orders(items_json=items_json, name=name, email=email, phone=phone, address=address, city=city, state=state, zip_code=zip_code, date=datetime.now())
+        order.save()
+        thankyou = True
+        id = order.order_id
+        return render(request, 'shop/checkout.html', {'thank':thankyou, 'id':id})
     return render(request, 'shop/checkout.html')
 
 
