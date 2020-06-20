@@ -6,7 +6,7 @@
 <div class="container my-4">
     <h2> Contact Us</h2>
 
-    <form action="/shop/contact" method="post">
+    <form name="myForm" action="/shop/contact" method="post" onsubmit="return validateForm()">
         {% csrf_token %}
   <div class="form-group my-3">
     <label for="name">Name</label>
@@ -25,8 +25,17 @@
     <label for="message">Enter your Comments</label>
     <textarea class="form-control" name="message" id="message" rows="3"></textarea>
   </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-</form>
+        <button type="submit" value="Submit" class="btn btn-success">Submit</button>
+ </form>
 
 </div>
-<b{% endblock %}
+{% endblock %}
+{% block js %}
+<script>
+    {% if thank %}
+     alert('Thanks for Contact us. Your message id is: {{id}}. We will contact back');
+     localStorage.clear();
+     document.location = "/shop";
+    {% endif %}
+</script>
+{% endblock %}
