@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8f43aea8-3cf8-40b5-b3d4-8e760949a901" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/blog/templates/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mac/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mac/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/Basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/Basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
