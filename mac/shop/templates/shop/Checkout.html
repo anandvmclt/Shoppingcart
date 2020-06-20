@@ -12,7 +12,7 @@
     </div>
     <div class="col my-4">
         <h2>Step:2 - Enter Billing & Shipping Details</h2>
-        <form method="post" action="/shop/checkout"> {% csrf_token %}
+        <form name="myForm" method="post" action="/shop/checkout" onsubmit="return validateForm()"> {% csrf_token %}
 
             <div class="mt-4 form-row">
                <input type="hidden" name="itemsjson" id="itemsjson">
@@ -66,16 +66,35 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Place Order</button>
+            <button type="submit"  value="Submit" class="btn btn-primary">Place Order</button>
           </form>
     </div>
+ <script>
+ function validateForm() {
+  var fn = document.forms["myForm"]["name"].value;
+  var em = document.forms["myForm"]["email"].value;
+  var gd = document.forms["myForm"]["message"].value;
+  if (fn == "") {
+    alert("Name must be filled out");
+    return false;
+    }
+   else if (em == "") {
+    alert("Email must be filled out");
+    return false;
+    }
+   else if (gd == "") {
+    alert("Please choose your Gender");
+    return false;
+    }
+  }
+
+    </script>
 </div>
 
 {% endblock %}
 
 {% block js %}
-<script>
-
+ <script>
   if (localStorage.getItem('cart') == null) {
     var cart = {};
 } else {
