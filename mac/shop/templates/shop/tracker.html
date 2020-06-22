@@ -35,6 +35,7 @@
 {% block js %}
 <script>
 $('#trackerForm').submit(function(event) {
+event.preventDefault()
     $('#items').empty();
     var formData = {
         'orderId': $('input[name=orderId]').val(),
@@ -43,7 +44,7 @@ $('#trackerForm').submit(function(event) {
     };
     $.ajax({
             type: 'POST',
-            url: '/shop/tracker/',
+            url: '/shop/tracker',
             data: formData,
             encode: true
         })

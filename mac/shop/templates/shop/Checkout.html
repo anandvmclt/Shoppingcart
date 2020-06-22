@@ -8,6 +8,11 @@
         <div class="mt-4">
             <ul class="list-group" id="items">
             </ul>
+     <nav aria-label="breadcrumb">
+     <ol class="breadcrumb mt-3">
+    <li class="breadcrumb-item active" aria-current="page">Your Cart Total Is <b>Rs. <span id="totalPrice"></span></b>. Enter your details below & place your order. Thanks for using iVASS VCart!</li>
+    </ol>
+    </nav>
         </div>
     </div>
     <div class="col my-4">
@@ -16,6 +21,7 @@
 
             <div class="mt-4 form-row">
                <input type="hidden" name="itemsjson" id="itemsjson">
+                 <input type="hidden" name="amount" id="amount">
 
               <div class="form-group col-md-4">
                 <label for="iname">Name:</label>
@@ -102,6 +108,7 @@
 }
 console.log(cart)
 var sum = 0;
+var totalPrice = 0;
 if ($.isEmptyObject(cart)){
   //Empty cart
   mystr = '<h4>Your Cart is Empty. Please Add some items from Shop Before Checkout.</h4>'
@@ -112,7 +119,10 @@ else{
   for (item in cart) {
         let name = cart[item][1];
         let qty = cart[item][0];
+        let itemPrice = cart[item][2];
         sum = sum + qty;
+        console.log(itemPrice)
+        totalPrice = totalPrice + qty* itemPrice;
         mystr = `<li class="list-group-item d-flex justify-content-between align-items-center">
                   ${name}
                   <span class="badge badge-primary badge-pill">${qty}</span>
@@ -121,11 +131,13 @@ else{
   }
  } 
  document.getElementById('cart').innerHTML = sum;
+ document.getElementById('totalPrice').innerHTML = totalPrice;
  $('#itemsjson').val(JSON.stringify(cart));
     {% if thank %}
      alert('Thanks for ordering with us. Your Order id is: {{id}}. Use it to track your Order');
      localStorage.clear();
      document.location = "/shop";
     {% endif %}
+  $('#amount').val($('#totalPrice').html())
 </script>
 {% endblock %}

@@ -40,7 +40,9 @@ class Orders(models.Model):
     date = models.DateTimeField()
 
     def __str__(self):
-         return self.name
+         x = self.order_id
+         y = str(x) +" - "+ self.name
+         return y
 
 class OrderUpdate(models.Model):
     update_id = models.AutoField(primary_key=True)
@@ -49,4 +51,6 @@ class OrderUpdate(models.Model):
     timestamp = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.update_desc[0:7] + "..."
+        x = self.order_id
+        y = str(x) +" - "+ self.update_desc[0:25]
+        return y

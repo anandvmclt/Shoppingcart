@@ -81,6 +81,7 @@ def products(request, myid):
 def checkout(request):
     if request.method == "POST":
         items_json = request.POST.get('itemsjson')
+        amount = int(request.POST.get('amount'))
         name = request.POST.get('iname')
         email = request.POST.get('email')
         phone = request.POST.get('phone')
@@ -88,7 +89,7 @@ def checkout(request):
         city = request.POST.get('city')
         state = request.POST.get('state')
         zip_code = request.POST.get('zip_code')
-        order = Orders(items_json=items_json, name=name, email=email, phone=phone, address=address, city=city, state=state, zip_code=zip_code, date=datetime.now())
+        order = Orders(items_json=items_json, amount=amount, name=name, email=email, phone=phone, address=address, city=city, state=state, zip_code=zip_code, date=datetime.now())
         order.save()
         update = OrderUpdate(order_id=order.order_id, update_desc="The order has been placed")
         update.save()
