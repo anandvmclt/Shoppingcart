@@ -4,7 +4,8 @@ from math import ceil
 from django.http import HttpResponse
 from datetime import datetime
 import json
-
+from django.views.decorators.csrf import csrf_exempt
+from paytm
 
 # Create your views here.
 def index(request):
@@ -95,9 +96,26 @@ def checkout(request):
         update.save()
         thankyou = True
         id = order.order_id
-        return render(request, 'shop/checkout.html', {'thank':thankyou, 'id':id})
+        #return render(request, 'shop/checkout.html', {'thank':thankyou, 'id':id})
+        # Request PayTm to transfer amount after payment
+        param_dict = {
+            'MID': 'DIY12386817555501617',
+            'ORDER_ID': str(order.order_id),
+            'TXN_AMOUNT': str(amount),
+            'CUST_ID': email,
+            'INDUSTRY_TYPE_ID': 'Retail',
+            'WEBSITE': 'WEBSTAGING',
+            'CHANNEL_ID': 'WEB',
+            'CALLBACK_URL': 'http://127.0.0.1:8000/shop/handlerequest',
+        }
+        return render(request, 'shop/paytm.html', {'param_dict': param_dict})
     return render(request, 'shop/checkout.html')
 
 
 def cart(request):
     return render(request, 'shop/checkout.html')
+
+@csrf_exempt
+def handlerequest(request):
+    #handle Post payment request without CSRF token
+    return HttpResponse('Done payment')

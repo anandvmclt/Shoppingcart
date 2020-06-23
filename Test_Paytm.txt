@@ -1,0 +1,8 @@
+
+-- test Wallet Details  --
+Mobile Number	77777 77777
+Password	Paytm12345
+OTP :		489871
+
+Doesn’t require 2nd factor authentication
+	
